@@ -119,7 +119,7 @@ def main():
                 if os.path.exists(f'./Players/{names_of_teams[i]}/main.py'):
                     command = f'python main.py > log.txt'
                 elif os.path.exists(f'./Players/{names_of_teams[i]}/main.exe'):
-                    command = f'./main.exe > log.txt' # ./main.exe for Ubuntu
+                    command = f'main.exe > log.txt' # ./main.exe for Ubuntu
                 else:
                     raise Exception(f'[{names_of_teams[i]}][ERROR] No executable file found.')
                 command = command.split()
