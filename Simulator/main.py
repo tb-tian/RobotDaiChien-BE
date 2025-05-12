@@ -3,11 +3,12 @@ import os
 import random
 import subprocess
 import sys
-from tqdm import tqdm
 from subprocess import STDOUT, check_output
 from copy import deepcopy 
 import psutil
 import shutil
+import argparse
+import threading
 
 from player import *
 from board import *
@@ -16,9 +17,21 @@ from JSONlogger import *
 from FileInteractor import *
 from powerUp import *
 
-def readGameBeforeStarting(path : str):
-    inputFile = open(f"./Map/{path}", "r")
+def parseArguments():
+    parser = argparse.ArgumentParser(description="CC25 simulator v3")
+    parser.add_argument("map", help="Path to the map file, must be in Map directory")
+    parser.add_argument("--players", "-p", nargs='+', help="A list of players name, must be in Players directory")
+    parserArgs = parser.parse_args()
+    return parserArgs.map, parserArgs.players
 
+def readGameBeforeStarting(path : str):
+    inputFile = None
+    try:
+        inputFile = open(f"./Map/{path}", "r")
+    except Exception as e:
+        print(f"Error opening map file {path}: {e}")
+        exit(-1);
+    
     #print(f"./map/{path}")
 
     M, N, frequency = map(int, inputFile.readline().split())
@@ -36,16 +49,8 @@ def readGameBeforeStarting(path : str):
     print("Reading configuration of the game before start is completed")
     return board, frequency
 
-def readNames():
-    map_file_path = input("Please type the path of the map file: ")
-    number_of_players = int(input("Please type the number of team: "))
-    names_of_teams = ["PATH_FILE" for i in range(number_of_players)]
-    for i in range(number_of_players):
-        names_of_teams[i] = input("Please enter name of team " + str(i) + ": ")
-    return map_file_path, names_of_teams
-
 def main():
-    map_file_path, names_of_teams = readNames()
+    map_file_path, names_of_teams = parseArguments()
     logger = JSONlogger()
     board, frequency = readGameBeforeStarting(map_file_path)
     listOfPlayers = ListOfPlayers(len(names_of_teams)) 
@@ -86,6 +91,9 @@ def main():
             initialFiles[i].append("MAP.INP")
 
             #print(initialFiles[i])
+        else: 
+            print(f"Player {names_of_teams[i]} not found");
+            exit(-1);
 
     initialBoard = board.getGrid()
 
@@ -112,14 +120,16 @@ def main():
             except:
                 pass
 
-        for i in range(len(names_of_teams)):
+        def runConcurrently(i: int):
             if not listOfPlayers[i].checkAlive():
-                continue
+                return
             try:
                 if os.path.exists(f'./Players/{names_of_teams[i]}/main.py'):
                     command = f'python main.py > log.txt'
                 elif os.path.exists(f'./Players/{names_of_teams[i]}/main.exe'):
-                    command = f'main.exe > log.txt' # ./main.exe for Ubuntu
+                    command = f'main.exe > log.txt'
+                elif os.path.exists(f'./Players/{names_of_teams[i]}/main'):
+                    command = f'./main > log.txt'
                 else:
                     raise Exception(f'[{names_of_teams[i]}][ERROR] No executable file found.')
                 command = command.split()
@@ -138,6 +148,16 @@ def main():
                     if proc.name() in PROC_NAME:
                         proc.kill()
                         #pass
+
+        threadList = []
+
+        for i in range(len(names_of_teams)):
+            thread = threading.Thread(target=runConcurrently, args=[i])
+            threadList.append(thread)
+            thread.start()
+        
+        for thread in threadList:
+            thread.join()
         
         outputs = fileInterator.readOutputFilesOfPlayers(names_of_teams)
 
