@@ -50,7 +50,7 @@ def main():
     board, frequency = readGameBeforeStarting(map_file_path)
     listOfPlayers = ListOfPlayers(len(names_of_teams)) 
     fileInterator = FileInteractor()
-    listOfPowerUps = []
+    listOfPowerUps = [PowerUp(4, 9, 'E', frequency), PowerUp(5, 9, 'E', frequency)]
     stopGame = False
     turn = radius = 0
     lastPositions = [(-1, -1) for i in range(len(names_of_teams))]
@@ -179,6 +179,7 @@ def main():
             x, y = listOfPlayers[i].getPosition()
             cells[x][y].append(i)
 
+        cellsAffectedByE = {}
         for x in range(board.getNumberOfRows()):
             for y in range(board.getNumberOfColumns()):
                 if board.checkUnmovable(x, y):
@@ -200,25 +201,28 @@ def main():
                     if findPowerUp(x, y, listOfPowerUps) == 'E' and listOfPlayers[cells[x][y][0]].checkActivePowerUp() == False:
                         id_player_on_E = cells[x][y][0]
                         player_color = listOfPlayers[id_player_on_E].getColor()
-                        for i in range(max(0, x - 2), min(board.getNumberOfRows(), x + 3)):
-                            for j in range(max(0, y - 2), min(board.getNumberOfColumns(), y + 3)):
+                        for i in range(max(0, x - 1), min(board.getNumberOfRows(), x + 2)):
+                            for j in range(max(0, y - 1), min(board.getNumberOfColumns(), y + 2)):
                                 if board.checkUnmovable(i, j):
                                     continue
+
                                 # Check if another player is on the cell (i,j)
-                                is_other_player_on_cell = False
                                 if len(cells[i][j]) > 0:
                                     if cells[i][j][0] != id_player_on_E : # if there is a player and it's not the current player
-                                        is_other_player_on_cell = True
+                                        listOfPlayers[cells[i][j][0]].getKilled()
                                 
-                                if not is_other_player_on_cell:
-                                    current_cell_type = board.getCell(i,j)
-                                    if 'A' <= current_cell_type <= 'D': # If it's another player's territory
-                                        owner_id = ord(current_cell_type) - ord('A')
-                                        if owner_id != id_player_on_E: # and not the current player's own territory
-                                            listOfPlayers[owner_id].increaseArea(-1)
+                                if (i,j) not in cellsAffectedByE:
+                                    cellsAffectedByE[(i,j)] = []
+                                cellsAffectedByE[(i,j)].append(id_player_on_E)
 
-                                    board.setCell(i, j, player_color)
-                                    listOfPlayers[id_player_on_E].increaseArea() # Increase area for the player who stepped on E
+                                # current_cell_type = board.getCell(i,j)
+                                # if 'A' <= current_cell_type <= 'D': # If it's another player's territory
+                                #     owner_id = ord(current_cell_type) - ord('A')
+                                #     if owner_id != id_player_on_E: # and not the current player's own territory
+                                #         listOfPlayers[owner_id].increaseArea(-1)
+
+                                # board.setCell(i, j, player_color)
+                                # listOfPlayers[id_player_on_E].increaseArea() # Increase area for the player who stepped on E
                         
                         deletePowerUp(x, y, listOfPowerUps)
 
@@ -234,8 +238,33 @@ def main():
                     listOfPlayers[id].increaseArea()
                     board.setCell(x, y, cell_char_to_set) # Set the cell to the player's color
             
+        # Apply E cell effects
+        for pos, player_ids in cellsAffectedByE.items():
+            i, j = pos
+            # If cell is affected by exactly one player
+            if len(player_ids) == 1:
+                id_player_on_E = player_ids[0]
+                player_color = listOfPlayers[id_player_on_E].getColor()
+                
+                # Check if another player is on the cell
+                if len(cells[i][j]) > 0 and cells[i][j][0] != id_player_on_E:
+                    listOfPlayers[cells[i][j][0]].getKilled()
+                
+                current_cell_type = board.getCell(i, j)
+                if 'A' <= current_cell_type <= 'D':  # If it's another player's territory
+                    owner_id = ord(current_cell_type) - ord('A')
+                    if owner_id != id_player_on_E:  # and not the current player's own territory
+                        listOfPlayers[owner_id].increaseArea(-1)
+                
+                board.setCell(i, j, player_color)
+                listOfPlayers[id_player_on_E].increaseArea()
+            # else: cell is affected by multiple players, leave it as is
+
         numberOfColors = len(listOfPlayers)
         updatedArea = board.updateCoveredArea(numberOfColors)
+
+        # Cell Coloring
+        # board.colorCell()
 
         # Update powerup timeout
         updatePowerUpTimeout(listOfPowerUps)
@@ -256,7 +285,7 @@ def main():
                     listOfPlayers[i].getKilled()
 
         if turn % frequency == 0:
-            addPowerUp(board, listOfPowerUps)
+            addPowerUp(board, listOfPowerUps, frequency)
 
         turn += 1
 

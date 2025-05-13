@@ -1,0 +1,650 @@
+{
+     "0": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": -1,
+                         "y": -1
+                    },
+                    "alive": true,
+                    "area": 0,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": -1,
+                         "y": -1
+                    },
+                    "alive": true,
+                    "area": 0,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    "..........",
+                    "..........",
+                    "..........",
+                    "..........",
+                    "..........",
+                    "..........",
+                    "..........",
+                    "..........",
+                    "..........",
+                    ".........."
+               ]
+          },
+          "powerups": [
+               {
+                    "x": 4,
+                    "y": 9,
+                    "type": "E",
+                    "timeout": 10
+               },
+               {
+                    "x": 5,
+                    "y": 9,
+                    "type": "E",
+                    "timeout": 10
+               }
+          ]
+     },
+     "1": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 9,
+                         "y": 9
+                    },
+                    "alive": true,
+                    "area": 1,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": 0,
+                         "y": 9
+                    },
+                    "alive": true,
+                    "area": 1,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    ".........B",
+                    "..........",
+                    "..........",
+                    "..........",
+                    "..........",
+                    "..........",
+                    "..........",
+                    "..........",
+                    "..........",
+                    ".........A"
+               ]
+          },
+          "powerups": [
+               {
+                    "x": 4,
+                    "y": 9,
+                    "type": "E",
+                    "timeout": 9
+               },
+               {
+                    "x": 5,
+                    "y": 9,
+                    "type": "E",
+                    "timeout": 9
+               },
+               {
+                    "x": 0,
+                    "y": 5,
+                    "type": "G",
+                    "timeout": 10
+               },
+               {
+                    "x": 9,
+                    "y": 3,
+                    "type": "E",
+                    "timeout": 10
+               }
+          ]
+     },
+     "2": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 8,
+                         "y": 9
+                    },
+                    "alive": true,
+                    "area": 2,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": 1,
+                         "y": 9
+                    },
+                    "alive": true,
+                    "area": 2,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    ".........B",
+                    ".........B",
+                    "..........",
+                    "..........",
+                    "..........",
+                    "..........",
+                    "..........",
+                    "..........",
+                    ".........A",
+                    ".........A"
+               ]
+          },
+          "powerups": [
+               {
+                    "x": 4,
+                    "y": 9,
+                    "type": "E",
+                    "timeout": 8
+               },
+               {
+                    "x": 5,
+                    "y": 9,
+                    "type": "E",
+                    "timeout": 8
+               },
+               {
+                    "x": 0,
+                    "y": 5,
+                    "type": "G",
+                    "timeout": 9
+               },
+               {
+                    "x": 9,
+                    "y": 3,
+                    "type": "E",
+                    "timeout": 9
+               }
+          ]
+     },
+     "3": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 7,
+                         "y": 9
+                    },
+                    "alive": true,
+                    "area": 3,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": 2,
+                         "y": 9
+                    },
+                    "alive": true,
+                    "area": 3,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    ".........B",
+                    ".........B",
+                    ".........B",
+                    "..........",
+                    "..........",
+                    "..........",
+                    "..........",
+                    ".........A",
+                    ".........A",
+                    ".........A"
+               ]
+          },
+          "powerups": [
+               {
+                    "x": 4,
+                    "y": 9,
+                    "type": "E",
+                    "timeout": 7
+               },
+               {
+                    "x": 5,
+                    "y": 9,
+                    "type": "E",
+                    "timeout": 7
+               },
+               {
+                    "x": 0,
+                    "y": 5,
+                    "type": "G",
+                    "timeout": 8
+               },
+               {
+                    "x": 9,
+                    "y": 3,
+                    "type": "E",
+                    "timeout": 8
+               }
+          ]
+     },
+     "4": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 6,
+                         "y": 9
+                    },
+                    "alive": true,
+                    "area": 4,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": 3,
+                         "y": 9
+                    },
+                    "alive": true,
+                    "area": 4,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    ".........B",
+                    ".........B",
+                    ".........B",
+                    ".........B",
+                    "..........",
+                    "..........",
+                    ".........A",
+                    ".........A",
+                    ".........A",
+                    ".........A"
+               ]
+          },
+          "powerups": [
+               {
+                    "x": 4,
+                    "y": 9,
+                    "type": "E",
+                    "timeout": 6
+               },
+               {
+                    "x": 5,
+                    "y": 9,
+                    "type": "E",
+                    "timeout": 6
+               },
+               {
+                    "x": 0,
+                    "y": 5,
+                    "type": "G",
+                    "timeout": 7
+               },
+               {
+                    "x": 9,
+                    "y": 3,
+                    "type": "E",
+                    "timeout": 7
+               }
+          ]
+     },
+     "5": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 5,
+                         "y": 9
+                    },
+                    "alive": false,
+                    "area": 6,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": 4,
+                         "y": 9
+                    },
+                    "alive": false,
+                    "area": 6,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    "*********b",
+                    "*........b",
+                    "*........b",
+                    "*.......Bb",
+                    "*........b",
+                    "*........a",
+                    "*.......Aa",
+                    "*........a",
+                    "*........a",
+                    "*********a"
+               ]
+          },
+          "powerups": [
+               {
+                    "x": 0,
+                    "y": 5,
+                    "type": "G",
+                    "timeout": 6
+               },
+               {
+                    "x": 9,
+                    "y": 3,
+                    "type": "E",
+                    "timeout": 6
+               }
+          ]
+     },
+     "6": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 5,
+                         "y": 9
+                    },
+                    "alive": false,
+                    "area": 6,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": 4,
+                         "y": 9
+                    },
+                    "alive": false,
+                    "area": 6,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    "*********b",
+                    "*********b",
+                    "**......*b",
+                    "**......bb",
+                    "**......*b",
+                    "**......*a",
+                    "**......aa",
+                    "**......*a",
+                    "*********a",
+                    "*********a"
+               ]
+          },
+          "powerups": [
+               {
+                    "x": 0,
+                    "y": 5,
+                    "type": "G",
+                    "timeout": 5
+               },
+               {
+                    "x": 9,
+                    "y": 3,
+                    "type": "E",
+                    "timeout": 5
+               }
+          ]
+     },
+     "7": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 5,
+                         "y": 9
+                    },
+                    "alive": false,
+                    "area": 6,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": 4,
+                         "y": 9
+                    },
+                    "alive": false,
+                    "area": 6,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    "*********b",
+                    "*********b",
+                    "*********b",
+                    "***....*bb",
+                    "***....**b",
+                    "***....**a",
+                    "***....*aa",
+                    "*********a",
+                    "*********a",
+                    "*********a"
+               ]
+          },
+          "powerups": [
+               {
+                    "x": 0,
+                    "y": 5,
+                    "type": "G",
+                    "timeout": 4
+               },
+               {
+                    "x": 9,
+                    "y": 3,
+                    "type": "E",
+                    "timeout": 4
+               }
+          ]
+     },
+     "8": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 5,
+                         "y": 9
+                    },
+                    "alive": false,
+                    "area": 6,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": 4,
+                         "y": 9
+                    },
+                    "alive": false,
+                    "area": 6,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    "*********b",
+                    "*********b",
+                    "*********b",
+                    "********bb",
+                    "****..***b",
+                    "****..***a",
+                    "********aa",
+                    "*********a",
+                    "*********a",
+                    "*********a"
+               ]
+          },
+          "powerups": [
+               {
+                    "x": 0,
+                    "y": 5,
+                    "type": "G",
+                    "timeout": 3
+               },
+               {
+                    "x": 9,
+                    "y": 3,
+                    "type": "E",
+                    "timeout": 3
+               }
+          ]
+     },
+     "9": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 5,
+                         "y": 9
+                    },
+                    "alive": false,
+                    "area": 6,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": 4,
+                         "y": 9
+                    },
+                    "alive": false,
+                    "area": 6,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": true,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    "*********b",
+                    "*********b",
+                    "*********b",
+                    "********bb",
+                    "*********b",
+                    "*********a",
+                    "********aa",
+                    "*********a",
+                    "*********a",
+                    "*********a"
+               ]
+          },
+          "powerups": [
+               {
+                    "x": 0,
+                    "y": 5,
+                    "type": "G",
+                    "timeout": 2
+               },
+               {
+                    "x": 9,
+                    "y": 3,
+                    "type": "E",
+                    "timeout": 2
+               }
+          ]
+     }
+}

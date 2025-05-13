@@ -5,6 +5,7 @@ class Board:
     def __init__(self):
         self.numberOfRows = self.numberOfColumns = 0
         self.grid = list()
+        self.cellsNeedToUpdate = []
 
     def setNumberOfRows(self, numberOfRows : int) -> bool:
         if numberOfRows < 0:
@@ -78,11 +79,25 @@ class Board:
     def setCell(self, x : int, y : int, s : str) -> bool:
         if (len(s) != 1) or (y < 0) or (y >= self.numberOfColumns):
             return False
-        
+        if [x, y, s] not in self.cellsNeedToUpdate:
+            self.cellsNeedToUpdate.append([x, y, s])
         self.grid[x] = self.grid[x][:y] + s + self.grid[x][(y + 1):] 
 
         return True
     
+    def colorCell(self) -> None:
+        unique_cells = {}
+        for x, y, s in self.cellsNeedToUpdate:
+            unique_cells[(x, y)] = s
+        
+        # self.cellsNeedToUpdate = [[x, y, s] for (x, y), s in unique_cells.items()]
+        print(self.cellsNeedToUpdate)
+        for x, y, s in self.cellsNeedToUpdate:
+            self.grid[x] = self.grid[x][:y] + s + self.grid[x][(y + 1):] 
+
+        self.cellsNeedToUpdate.clear()
+
+
     def shrink(self, length : int) -> bool:
         if (length < 0):
             return False

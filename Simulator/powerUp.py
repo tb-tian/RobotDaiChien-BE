@@ -1,11 +1,11 @@
 import random
 
 class PowerUp:
-    def __init__(self, x, y, powerup_type):
+    def __init__(self, x, y, powerup_type, timeout):
         self.x = x
         self.y = y
         self.type = powerup_type
-        self.timeout = 10
+        self.timeout = timeout
 
     def toDictionary(self):
         return {"x": self.x, "y": self.y, "type": self.type, "timeout": self.timeout}
@@ -38,7 +38,7 @@ def updatePowerUpTimeout(listOfPowerUps: list) -> None:
             if pu in listOfPowerUps:
                 listOfPowerUps.remove(pu)
 
-def addPowerUp(board, listOfPowerUps: list) -> None:
+def addPowerUp(board, listOfPowerUps: list, timeout: int) -> None:
     powerup_types = ['G', 'E', 'F']
     chosen_types = random.sample(powerup_types, 2)
 
@@ -50,5 +50,5 @@ def addPowerUp(board, listOfPowerUps: list) -> None:
         x, y = random.choice(movable_cells)
         x, y = int(x), int(y)
         if findPowerUp(x, y, listOfPowerUps) == None:
-            listOfPowerUps.append(PowerUp(x, y, powerup_type))
+            listOfPowerUps.append(PowerUp(x, y, powerup_type, timeout))
             movable_cells.remove((x,y))
