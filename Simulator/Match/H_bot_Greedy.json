@@ -50,7 +50,7 @@
           "players": {
                "0": {
                     "position": {
-                         "x": 7,
+                         "x": 0,
                          "y": 7
                     },
                     "alive": true,
@@ -62,8 +62,8 @@
                },
                "1": {
                     "position": {
-                         "x": 0,
-                         "y": 9
+                         "x": 9,
+                         "y": 1
                     },
                     "alive": true,
                     "area": 1,
@@ -79,29 +79,29 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    ".........B",
-                    "..........",
-                    "..........",
-                    "..........",
-                    "..........",
-                    "..........",
-                    "..........",
                     ".......A..",
                     "..........",
-                    ".........."
+                    "..........",
+                    "..........",
+                    "..........",
+                    "..........",
+                    "..........",
+                    "..........",
+                    "..........",
+                    ".B........"
                ]
           },
           "powerups": [
                {
-                    "x": 7,
-                    "y": 0,
-                    "type": "F",
+                    "x": 5,
+                    "y": 1,
+                    "type": "E",
                     "timeout": 10
                },
                {
-                    "x": 4,
-                    "y": 8,
-                    "type": "G",
+                    "x": 3,
+                    "y": 7,
+                    "type": "F",
                     "timeout": 10
                }
           ]
@@ -110,7 +110,7 @@
           "players": {
                "0": {
                     "position": {
-                         "x": 6,
+                         "x": 1,
                          "y": 7
                     },
                     "alive": true,
@@ -122,8 +122,8 @@
                },
                "1": {
                     "position": {
-                         "x": 1,
-                         "y": 9
+                         "x": 8,
+                         "y": 1
                     },
                     "alive": true,
                     "area": 2,
@@ -139,29 +139,29 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    ".........B",
-                    ".........B",
-                    "..........",
-                    "..........",
-                    "..........",
-                    "..........",
                     ".......A..",
                     ".......A..",
                     "..........",
-                    ".........."
+                    "..........",
+                    "..........",
+                    "..........",
+                    "..........",
+                    "..........",
+                    ".B........",
+                    ".B........"
                ]
           },
           "powerups": [
                {
-                    "x": 7,
-                    "y": 0,
-                    "type": "F",
+                    "x": 5,
+                    "y": 1,
+                    "type": "E",
                     "timeout": 9
                },
                {
-                    "x": 4,
-                    "y": 8,
-                    "type": "G",
+                    "x": 3,
+                    "y": 7,
+                    "type": "F",
                     "timeout": 9
                }
           ]
@@ -170,7 +170,7 @@
           "players": {
                "0": {
                     "position": {
-                         "x": 5,
+                         "x": 2,
                          "y": 7
                     },
                     "alive": true,
@@ -182,8 +182,8 @@
                },
                "1": {
                     "position": {
-                         "x": 1,
-                         "y": 8
+                         "x": 7,
+                         "y": 1
                     },
                     "alive": true,
                     "area": 3,
@@ -199,29 +199,29 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    ".........B",
-                    "........BB",
-                    "..........",
-                    "..........",
-                    "..........",
                     ".......A..",
                     ".......A..",
                     ".......A..",
                     "..........",
-                    ".........."
+                    "..........",
+                    "..........",
+                    "..........",
+                    ".B........",
+                    ".B........",
+                    ".B........"
                ]
           },
           "powerups": [
                {
-                    "x": 7,
-                    "y": 0,
-                    "type": "F",
+                    "x": 5,
+                    "y": 1,
+                    "type": "E",
                     "timeout": 8
                },
                {
-                    "x": 4,
-                    "y": 8,
-                    "type": "G",
+                    "x": 3,
+                    "y": 7,
+                    "type": "F",
                     "timeout": 8
                }
           ]
@@ -230,20 +230,20 @@
           "players": {
                "0": {
                     "position": {
-                         "x": 5,
-                         "y": 6
+                         "x": 3,
+                         "y": 7
                     },
                     "alive": true,
                     "area": 4,
                     "color": "A",
                     "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
+                    "dautron": 5,
+                    "powerup": "dautron"
                },
                "1": {
                     "position": {
-                         "x": 2,
-                         "y": 8
+                         "x": 6,
+                         "y": 1
                     },
                     "alive": true,
                     "area": 4,
@@ -259,29 +259,23 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    ".........B",
-                    "........BB",
-                    "........B.",
-                    "..........",
-                    "..........",
-                    "......AA..",
+                    ".......A..",
+                    ".......A..",
                     ".......A..",
                     ".......A..",
                     "..........",
-                    ".........."
+                    "..........",
+                    ".B........",
+                    ".B........",
+                    ".B........",
+                    ".B........"
                ]
           },
           "powerups": [
                {
-                    "x": 7,
-                    "y": 0,
-                    "type": "F",
-                    "timeout": 7
-               },
-               {
-                    "x": 4,
-                    "y": 8,
-                    "type": "G",
+                    "x": 5,
+                    "y": 1,
+                    "type": "E",
                     "timeout": 7
                }
           ]
@@ -290,23 +284,23 @@
           "players": {
                "0": {
                     "position": {
-                         "x": 5,
-                         "y": 5
+                         "x": 4,
+                         "y": 7
                     },
                     "alive": true,
                     "area": 5,
                     "color": "A",
                     "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
+                    "dautron": 4,
+                    "powerup": "dautron"
                },
                "1": {
                     "position": {
-                         "x": 3,
-                         "y": 8
+                         "x": 5,
+                         "y": 1
                     },
                     "alive": true,
-                    "area": 5,
+                    "area": 12,
                     "color": "B",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -319,58 +313,45 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    ".........B",
-                    "........BB",
-                    "........B.",
-                    "........B.",
-                    "..........",
-                    ".....AAA..",
                     ".......A..",
                     ".......A..",
-                    "..........",
-                    ".........."
+                    ".......A..",
+                    ".......A..",
+                    "BBB....A..",
+                    "BBB.......",
+                    "BBB.......",
+                    ".B........",
+                    ".B........",
+                    ".B........"
                ]
           },
-          "powerups": [
-               {
-                    "x": 7,
-                    "y": 0,
-                    "type": "F",
-                    "timeout": 6
-               },
-               {
-                    "x": 4,
-                    "y": 8,
-                    "type": "G",
-                    "timeout": 6
-               }
-          ]
+          "powerups": []
      },
      "6": {
           "players": {
                "0": {
                     "position": {
-                         "x": 4,
-                         "y": 5
+                         "x": 5,
+                         "y": 7
                     },
                     "alive": true,
                     "area": 6,
                     "color": "A",
                     "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
+                    "dautron": 3,
+                    "powerup": "dautron"
                },
                "1": {
                     "position": {
-                         "x": 4,
-                         "y": 8
+                         "x": 5,
+                         "y": 2
                     },
                     "alive": true,
-                    "area": 6,
+                    "area": 12,
                     "color": "B",
-                    "tangtoc": 5,
+                    "tangtoc": 0,
                     "dautron": 0,
-                    "powerup": "tangtoc"
+                    "powerup": null
                }
           },
           "frequency": 10,
@@ -379,52 +360,45 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    ".........B",
-                    "........BB",
-                    "........B.",
-                    "........B.",
-                    ".....A..B.",
-                    ".....AAA..",
                     ".......A..",
                     ".......A..",
-                    "..........",
-                    ".........."
+                    ".......A..",
+                    ".......A..",
+                    "BBB....A..",
+                    "BBB....A..",
+                    "BBB.......",
+                    ".B........",
+                    ".B........",
+                    ".B........"
                ]
           },
-          "powerups": [
-               {
-                    "x": 7,
-                    "y": 0,
-                    "type": "F",
-                    "timeout": 5
-               }
-          ]
+          "powerups": []
      },
      "7": {
           "players": {
                "0": {
                     "position": {
                          "x": 5,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 6,
-                    "color": "A",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               },
-               "1": {
-                    "position": {
-                         "x": 4,
                          "y": 6
                     },
                     "alive": true,
-                    "area": 8,
+                    "area": 7,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 2,
+                    "powerup": "dautron"
+               },
+               "1": {
+                    "position": {
+                         "x": 5,
+                         "y": 3
+                    },
+                    "alive": true,
+                    "area": 13,
                     "color": "B",
-                    "tangtoc": 4,
+                    "tangtoc": 0,
                     "dautron": 0,
-                    "powerup": "tangtoc"
+                    "powerup": null
                }
           },
           "frequency": 10,
@@ -433,52 +407,45 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    ".........B",
-                    "........BB",
-                    "........B.",
-                    "........B.",
-                    ".....ABBB.",
-                    ".....AAA..",
                     ".......A..",
                     ".......A..",
-                    "..........",
-                    ".........."
+                    ".......A..",
+                    ".......A..",
+                    "BBB....A..",
+                    "BBBB..AA..",
+                    "BBB.......",
+                    ".B........",
+                    ".B........",
+                    ".B........"
                ]
           },
-          "powerups": [
-               {
-                    "x": 7,
-                    "y": 0,
-                    "type": "F",
-                    "timeout": 4
-               }
-          ]
+          "powerups": []
      },
      "8": {
           "players": {
                "0": {
                     "position": {
-                         "x": 4,
+                         "x": 5,
                          "y": 5
                     },
                     "alive": true,
-                    "area": 5,
+                    "area": 8,
                     "color": "A",
                     "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
+                    "dautron": 1,
+                    "powerup": "dautron"
                },
                "1": {
                     "position": {
                          "x": 5,
-                         "y": 6
+                         "y": 4
                     },
                     "alive": true,
-                    "area": 9,
+                    "area": 14,
                     "color": "B",
-                    "tangtoc": 3,
+                    "tangtoc": 0,
                     "dautron": 0,
-                    "powerup": "tangtoc"
+                    "powerup": null
                }
           },
           "frequency": 10,
@@ -487,36 +454,29 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    ".........B",
-                    "........BB",
-                    "........B.",
-                    "........B.",
-                    ".....ABBB.",
-                    ".....ABA..",
                     ".......A..",
                     ".......A..",
-                    "..........",
-                    ".........."
+                    ".......A..",
+                    ".......A..",
+                    "BBB....A..",
+                    "BBBBBAAA..",
+                    "BBB.......",
+                    ".B........",
+                    ".B........",
+                    ".B........"
                ]
           },
-          "powerups": [
-               {
-                    "x": 7,
-                    "y": 0,
-                    "type": "F",
-                    "timeout": 3
-               }
-          ]
+          "powerups": []
      },
      "9": {
           "players": {
                "0": {
                     "position": {
-                         "x": 5,
+                         "x": 4,
                          "y": 5
                     },
                     "alive": true,
-                    "area": 5,
+                    "area": 8,
                     "color": "A",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -526,774 +486,6 @@
                     "position": {
                          "x": 5,
                          "y": 5
-                    },
-                    "alive": true,
-                    "area": 9,
-                    "color": "B",
-                    "tangtoc": 2,
-                    "dautron": 0,
-                    "powerup": "tangtoc"
-               }
-          },
-          "frequency": 10,
-          "stopGame": false,
-          "map": {
-               "rows": 10,
-               "columns": 10,
-               "grid": [
-                    ".........B",
-                    "........BB",
-                    "........B.",
-                    "........B.",
-                    ".....ABBB.",
-                    ".....ABA..",
-                    ".......A..",
-                    ".......A..",
-                    "..........",
-                    ".........."
-               ]
-          },
-          "powerups": [
-               {
-                    "x": 7,
-                    "y": 0,
-                    "type": "F",
-                    "timeout": 2
-               }
-          ]
-     },
-     "10": {
-          "players": {
-               "0": {
-                    "position": {
-                         "x": 4,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 4,
-                    "color": "A",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               },
-               "1": {
-                    "position": {
-                         "x": 5,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 10,
-                    "color": "B",
-                    "tangtoc": 1,
-                    "dautron": 0,
-                    "powerup": "tangtoc"
-               }
-          },
-          "frequency": 10,
-          "stopGame": false,
-          "map": {
-               "rows": 10,
-               "columns": 10,
-               "grid": [
-                    ".........B",
-                    "........BB",
-                    "........B.",
-                    "........B.",
-                    ".....ABBB.",
-                    ".....BBA..",
-                    ".......A..",
-                    ".......A..",
-                    "..........",
-                    ".........."
-               ]
-          },
-          "powerups": [
-               {
-                    "x": 7,
-                    "y": 0,
-                    "type": "F",
-                    "timeout": 1
-               }
-          ]
-     },
-     "11": {
-          "players": {
-               "0": {
-                    "position": {
-                         "x": 5,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 4,
-                    "color": "A",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               },
-               "1": {
-                    "position": {
-                         "x": 4,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 10,
-                    "color": "B",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               }
-          },
-          "frequency": 10,
-          "stopGame": false,
-          "map": {
-               "rows": 10,
-               "columns": 10,
-               "grid": [
-                    "*********b",
-                    "*.......Bb",
-                    "*.......B*",
-                    "*.......B*",
-                    "*....BBBB*",
-                    "*....ABA.*",
-                    "*......A.*",
-                    "*......A.*",
-                    "*........*",
-                    "**********"
-               ]
-          },
-          "powerups": [
-               {
-                    "x": 1,
-                    "y": 2,
-                    "type": "F",
-                    "timeout": 10
-               },
-               {
-                    "x": 7,
-                    "y": 7,
-                    "type": "E",
-                    "timeout": 10
-               }
-          ]
-     },
-     "12": {
-          "players": {
-               "0": {
-                    "position": {
-                         "x": 4,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 4,
-                    "color": "A",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               },
-               "1": {
-                    "position": {
-                         "x": 5,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 10,
-                    "color": "B",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               }
-          },
-          "frequency": 10,
-          "stopGame": false,
-          "map": {
-               "rows": 10,
-               "columns": 10,
-               "grid": [
-                    "*********b",
-                    "*.......Bb",
-                    "*.......B*",
-                    "*.......B*",
-                    "*....ABBB*",
-                    "*....BBA.*",
-                    "*......A.*",
-                    "*......A.*",
-                    "*........*",
-                    "**********"
-               ]
-          },
-          "powerups": [
-               {
-                    "x": 1,
-                    "y": 2,
-                    "type": "F",
-                    "timeout": 9
-               },
-               {
-                    "x": 7,
-                    "y": 7,
-                    "type": "E",
-                    "timeout": 9
-               }
-          ]
-     },
-     "13": {
-          "players": {
-               "0": {
-                    "position": {
-                         "x": 5,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 4,
-                    "color": "A",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               },
-               "1": {
-                    "position": {
-                         "x": 4,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 10,
-                    "color": "B",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               }
-          },
-          "frequency": 10,
-          "stopGame": false,
-          "map": {
-               "rows": 10,
-               "columns": 10,
-               "grid": [
-                    "*********b",
-                    "*.......Bb",
-                    "*.......B*",
-                    "*.......B*",
-                    "*....BBBB*",
-                    "*....ABA.*",
-                    "*......A.*",
-                    "*......A.*",
-                    "*........*",
-                    "**********"
-               ]
-          },
-          "powerups": [
-               {
-                    "x": 1,
-                    "y": 2,
-                    "type": "F",
-                    "timeout": 8
-               },
-               {
-                    "x": 7,
-                    "y": 7,
-                    "type": "E",
-                    "timeout": 8
-               }
-          ]
-     },
-     "14": {
-          "players": {
-               "0": {
-                    "position": {
-                         "x": 4,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 4,
-                    "color": "A",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               },
-               "1": {
-                    "position": {
-                         "x": 5,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 10,
-                    "color": "B",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               }
-          },
-          "frequency": 10,
-          "stopGame": false,
-          "map": {
-               "rows": 10,
-               "columns": 10,
-               "grid": [
-                    "*********b",
-                    "*.......Bb",
-                    "*.......B*",
-                    "*.......B*",
-                    "*....ABBB*",
-                    "*....BBA.*",
-                    "*......A.*",
-                    "*......A.*",
-                    "*........*",
-                    "**********"
-               ]
-          },
-          "powerups": [
-               {
-                    "x": 1,
-                    "y": 2,
-                    "type": "F",
-                    "timeout": 7
-               },
-               {
-                    "x": 7,
-                    "y": 7,
-                    "type": "E",
-                    "timeout": 7
-               }
-          ]
-     },
-     "15": {
-          "players": {
-               "0": {
-                    "position": {
-                         "x": 5,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 4,
-                    "color": "A",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               },
-               "1": {
-                    "position": {
-                         "x": 4,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 10,
-                    "color": "B",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               }
-          },
-          "frequency": 10,
-          "stopGame": false,
-          "map": {
-               "rows": 10,
-               "columns": 10,
-               "grid": [
-                    "*********b",
-                    "*.......Bb",
-                    "*.......B*",
-                    "*.......B*",
-                    "*....BBBB*",
-                    "*....ABA.*",
-                    "*......A.*",
-                    "*......A.*",
-                    "*........*",
-                    "**********"
-               ]
-          },
-          "powerups": [
-               {
-                    "x": 1,
-                    "y": 2,
-                    "type": "F",
-                    "timeout": 6
-               },
-               {
-                    "x": 7,
-                    "y": 7,
-                    "type": "E",
-                    "timeout": 6
-               }
-          ]
-     },
-     "16": {
-          "players": {
-               "0": {
-                    "position": {
-                         "x": 4,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 4,
-                    "color": "A",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               },
-               "1": {
-                    "position": {
-                         "x": 5,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 10,
-                    "color": "B",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               }
-          },
-          "frequency": 10,
-          "stopGame": false,
-          "map": {
-               "rows": 10,
-               "columns": 10,
-               "grid": [
-                    "*********b",
-                    "*.......Bb",
-                    "*.......B*",
-                    "*.......B*",
-                    "*....ABBB*",
-                    "*....BBA.*",
-                    "*......A.*",
-                    "*......A.*",
-                    "*........*",
-                    "**********"
-               ]
-          },
-          "powerups": [
-               {
-                    "x": 1,
-                    "y": 2,
-                    "type": "F",
-                    "timeout": 5
-               },
-               {
-                    "x": 7,
-                    "y": 7,
-                    "type": "E",
-                    "timeout": 5
-               }
-          ]
-     },
-     "17": {
-          "players": {
-               "0": {
-                    "position": {
-                         "x": 5,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 4,
-                    "color": "A",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               },
-               "1": {
-                    "position": {
-                         "x": 4,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 10,
-                    "color": "B",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               }
-          },
-          "frequency": 10,
-          "stopGame": false,
-          "map": {
-               "rows": 10,
-               "columns": 10,
-               "grid": [
-                    "*********b",
-                    "*.......Bb",
-                    "*.......B*",
-                    "*.......B*",
-                    "*....BBBB*",
-                    "*....ABA.*",
-                    "*......A.*",
-                    "*......A.*",
-                    "*........*",
-                    "**********"
-               ]
-          },
-          "powerups": [
-               {
-                    "x": 1,
-                    "y": 2,
-                    "type": "F",
-                    "timeout": 4
-               },
-               {
-                    "x": 7,
-                    "y": 7,
-                    "type": "E",
-                    "timeout": 4
-               }
-          ]
-     },
-     "18": {
-          "players": {
-               "0": {
-                    "position": {
-                         "x": 4,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 4,
-                    "color": "A",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               },
-               "1": {
-                    "position": {
-                         "x": 5,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 10,
-                    "color": "B",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               }
-          },
-          "frequency": 10,
-          "stopGame": false,
-          "map": {
-               "rows": 10,
-               "columns": 10,
-               "grid": [
-                    "*********b",
-                    "*.......Bb",
-                    "*.......B*",
-                    "*.......B*",
-                    "*....ABBB*",
-                    "*....BBA.*",
-                    "*......A.*",
-                    "*......A.*",
-                    "*........*",
-                    "**********"
-               ]
-          },
-          "powerups": [
-               {
-                    "x": 1,
-                    "y": 2,
-                    "type": "F",
-                    "timeout": 3
-               },
-               {
-                    "x": 7,
-                    "y": 7,
-                    "type": "E",
-                    "timeout": 3
-               }
-          ]
-     },
-     "19": {
-          "players": {
-               "0": {
-                    "position": {
-                         "x": 5,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 4,
-                    "color": "A",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               },
-               "1": {
-                    "position": {
-                         "x": 4,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 10,
-                    "color": "B",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               }
-          },
-          "frequency": 10,
-          "stopGame": false,
-          "map": {
-               "rows": 10,
-               "columns": 10,
-               "grid": [
-                    "*********b",
-                    "*.......Bb",
-                    "*.......B*",
-                    "*.......B*",
-                    "*....BBBB*",
-                    "*....ABA.*",
-                    "*......A.*",
-                    "*......A.*",
-                    "*........*",
-                    "**********"
-               ]
-          },
-          "powerups": [
-               {
-                    "x": 1,
-                    "y": 2,
-                    "type": "F",
-                    "timeout": 2
-               },
-               {
-                    "x": 7,
-                    "y": 7,
-                    "type": "E",
-                    "timeout": 2
-               }
-          ]
-     },
-     "20": {
-          "players": {
-               "0": {
-                    "position": {
-                         "x": 4,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 4,
-                    "color": "A",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               },
-               "1": {
-                    "position": {
-                         "x": 5,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 10,
-                    "color": "B",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               }
-          },
-          "frequency": 10,
-          "stopGame": false,
-          "map": {
-               "rows": 10,
-               "columns": 10,
-               "grid": [
-                    "*********b",
-                    "*.......Bb",
-                    "*.......B*",
-                    "*.......B*",
-                    "*....ABBB*",
-                    "*....BBA.*",
-                    "*......A.*",
-                    "*......A.*",
-                    "*........*",
-                    "**********"
-               ]
-          },
-          "powerups": [
-               {
-                    "x": 1,
-                    "y": 2,
-                    "type": "F",
-                    "timeout": 1
-               },
-               {
-                    "x": 7,
-                    "y": 7,
-                    "type": "E",
-                    "timeout": 1
-               }
-          ]
-     },
-     "21": {
-          "players": {
-               "0": {
-                    "position": {
-                         "x": 5,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 4,
-                    "color": "A",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               },
-               "1": {
-                    "position": {
-                         "x": 4,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 10,
-                    "color": "B",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               }
-          },
-          "frequency": 10,
-          "stopGame": false,
-          "map": {
-               "rows": 10,
-               "columns": 10,
-               "grid": [
-                    "*********b",
-                    "********bb",
-                    "**......b*",
-                    "**......b*",
-                    "**...BBBb*",
-                    "**...ABA**",
-                    "**.....A**",
-                    "**.....A**",
-                    "**********",
-                    "**********"
-               ]
-          },
-          "powerups": [
-               {
-                    "x": 5,
-                    "y": 2,
-                    "type": "F",
-                    "timeout": 10
-               },
-               {
-                    "x": 4,
-                    "y": 6,
-                    "type": "E",
-                    "timeout": 10
-               }
-          ]
-     },
-     "22": {
-          "players": {
-               "0": {
-                    "position": {
-                         "x": 4,
-                         "y": 5
-                    },
-                    "alive": false,
-                    "area": 2,
-                    "color": "A",
-                    "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
-               },
-               "1": {
-                    "position": {
-                         "x": 4,
-                         "y": 6
                     },
                     "alive": true,
                     "area": 15,
@@ -1309,23 +501,777 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "**......b*",
-                    "**...BBBb*",
-                    "**...BBBb*",
-                    "**...BBB**",
-                    "**.....A**",
-                    "**.....A**",
-                    "**********",
-                    "**********"
+                    ".......A..",
+                    ".......A..",
+                    ".......A..",
+                    ".......A..",
+                    "BBB..A.A..",
+                    "BBBBBBAA..",
+                    "BBB.......",
+                    ".B........",
+                    ".B........",
+                    ".B........"
+               ]
+          },
+          "powerups": []
+     },
+     "10": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 5,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 8,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": 4,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 15,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    ".......A..",
+                    ".......A..",
+                    ".......A..",
+                    ".......A..",
+                    "BBB..B.A..",
+                    "BBBBBAAA..",
+                    "BBB.......",
+                    ".B........",
+                    ".B........",
+                    ".B........"
+               ]
+          },
+          "powerups": []
+     },
+     "11": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 4,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 8,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": 5,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 15,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    "*******a**",
+                    "*......A.*",
+                    "*......A.*",
+                    "*......A.*",
+                    "bBB..A.A.*",
+                    "bBBBBBAA.*",
+                    "bBB......*",
+                    "*B.......*",
+                    "*B.......*",
+                    "*b********"
                ]
           },
           "powerups": [
                {
-                    "x": 5,
+                    "x": 3,
                     "y": 2,
                     "type": "F",
+                    "timeout": 10
+               },
+               {
+                    "x": 3,
+                    "y": 4,
+                    "type": "G",
+                    "timeout": 10
+               }
+          ]
+     },
+     "12": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 5,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 8,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": 4,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 15,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    "*******a**",
+                    "*......A.*",
+                    "*......A.*",
+                    "*......A.*",
+                    "bBB..B.A.*",
+                    "bBBBBAAA.*",
+                    "bBB......*",
+                    "*B.......*",
+                    "*B.......*",
+                    "*b********"
+               ]
+          },
+          "powerups": [
+               {
+                    "x": 3,
+                    "y": 2,
+                    "type": "F",
+                    "timeout": 9
+               },
+               {
+                    "x": 3,
+                    "y": 4,
+                    "type": "G",
+                    "timeout": 9
+               }
+          ]
+     },
+     "13": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 4,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 8,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": 5,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 15,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    "*******a**",
+                    "*......A.*",
+                    "*......A.*",
+                    "*......A.*",
+                    "bBB..A.A.*",
+                    "bBBBBBAA.*",
+                    "bBB......*",
+                    "*B.......*",
+                    "*B.......*",
+                    "*b********"
+               ]
+          },
+          "powerups": [
+               {
+                    "x": 3,
+                    "y": 2,
+                    "type": "F",
+                    "timeout": 8
+               },
+               {
+                    "x": 3,
+                    "y": 4,
+                    "type": "G",
+                    "timeout": 8
+               }
+          ]
+     },
+     "14": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 5,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 8,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": 4,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 15,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    "*******a**",
+                    "*......A.*",
+                    "*......A.*",
+                    "*......A.*",
+                    "bBB..B.A.*",
+                    "bBBBBAAA.*",
+                    "bBB......*",
+                    "*B.......*",
+                    "*B.......*",
+                    "*b********"
+               ]
+          },
+          "powerups": [
+               {
+                    "x": 3,
+                    "y": 2,
+                    "type": "F",
+                    "timeout": 7
+               },
+               {
+                    "x": 3,
+                    "y": 4,
+                    "type": "G",
+                    "timeout": 7
+               }
+          ]
+     },
+     "15": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 4,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 8,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": 5,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 15,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    "*******a**",
+                    "*......A.*",
+                    "*......A.*",
+                    "*......A.*",
+                    "bBB..A.A.*",
+                    "bBBBBBAA.*",
+                    "bBB......*",
+                    "*B.......*",
+                    "*B.......*",
+                    "*b********"
+               ]
+          },
+          "powerups": [
+               {
+                    "x": 3,
+                    "y": 2,
+                    "type": "F",
+                    "timeout": 6
+               },
+               {
+                    "x": 3,
+                    "y": 4,
+                    "type": "G",
+                    "timeout": 6
+               }
+          ]
+     },
+     "16": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 5,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 8,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": 4,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 15,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    "*******a**",
+                    "*......A.*",
+                    "*......A.*",
+                    "*......A.*",
+                    "bBB..B.A.*",
+                    "bBBBBAAA.*",
+                    "bBB......*",
+                    "*B.......*",
+                    "*B.......*",
+                    "*b********"
+               ]
+          },
+          "powerups": [
+               {
+                    "x": 3,
+                    "y": 2,
+                    "type": "F",
+                    "timeout": 5
+               },
+               {
+                    "x": 3,
+                    "y": 4,
+                    "type": "G",
+                    "timeout": 5
+               }
+          ]
+     },
+     "17": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 4,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 8,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": 5,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 15,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    "*******a**",
+                    "*......A.*",
+                    "*......A.*",
+                    "*......A.*",
+                    "bBB..A.A.*",
+                    "bBBBBBAA.*",
+                    "bBB......*",
+                    "*B.......*",
+                    "*B.......*",
+                    "*b********"
+               ]
+          },
+          "powerups": [
+               {
+                    "x": 3,
+                    "y": 2,
+                    "type": "F",
+                    "timeout": 4
+               },
+               {
+                    "x": 3,
+                    "y": 4,
+                    "type": "G",
+                    "timeout": 4
+               }
+          ]
+     },
+     "18": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 5,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 8,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": 4,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 15,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    "*******a**",
+                    "*......A.*",
+                    "*......A.*",
+                    "*......A.*",
+                    "bBB..B.A.*",
+                    "bBBBBAAA.*",
+                    "bBB......*",
+                    "*B.......*",
+                    "*B.......*",
+                    "*b********"
+               ]
+          },
+          "powerups": [
+               {
+                    "x": 3,
+                    "y": 2,
+                    "type": "F",
+                    "timeout": 3
+               },
+               {
+                    "x": 3,
+                    "y": 4,
+                    "type": "G",
+                    "timeout": 3
+               }
+          ]
+     },
+     "19": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 4,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 8,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": 5,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 15,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    "*******a**",
+                    "*......A.*",
+                    "*......A.*",
+                    "*......A.*",
+                    "bBB..A.A.*",
+                    "bBBBBBAA.*",
+                    "bBB......*",
+                    "*B.......*",
+                    "*B.......*",
+                    "*b********"
+               ]
+          },
+          "powerups": [
+               {
+                    "x": 3,
+                    "y": 2,
+                    "type": "F",
+                    "timeout": 2
+               },
+               {
+                    "x": 3,
+                    "y": 4,
+                    "type": "G",
+                    "timeout": 2
+               }
+          ]
+     },
+     "20": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 5,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 8,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": 4,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 15,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    "*******a**",
+                    "*......A.*",
+                    "*......A.*",
+                    "*......A.*",
+                    "bBB..B.A.*",
+                    "bBBBBAAA.*",
+                    "bBB......*",
+                    "*B.......*",
+                    "*B.......*",
+                    "*b********"
+               ]
+          },
+          "powerups": [
+               {
+                    "x": 3,
+                    "y": 2,
+                    "type": "F",
+                    "timeout": 1
+               },
+               {
+                    "x": 3,
+                    "y": 4,
+                    "type": "G",
+                    "timeout": 1
+               }
+          ]
+     },
+     "21": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 4,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 8,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": 5,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 15,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    "*******a**",
+                    "*******a**",
+                    "**.....A**",
+                    "**.....A**",
+                    "bbB..A.A**",
+                    "bbBBBBAA**",
+                    "bbB.....**",
+                    "*b......**",
+                    "*b********",
+                    "*b********"
+               ]
+          },
+          "powerups": [
+               {
+                    "x": 3,
+                    "y": 5,
+                    "type": "E",
+                    "timeout": 10
+               },
+               {
+                    "x": 2,
+                    "y": 3,
+                    "type": "G",
+                    "timeout": 10
+               }
+          ]
+     },
+     "22": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 3,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 16,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               },
+               "1": {
+                    "position": {
+                         "x": 4,
+                         "y": 5
+                    },
+                    "alive": false,
+                    "area": 15,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
+               }
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    "*******a**",
+                    "*******a**",
+                    "**..AAAA**",
+                    "**..AAAA**",
+                    "bbB.AAAA**",
+                    "bbBBBBAA**",
+                    "bbB.....**",
+                    "*b......**",
+                    "*b********",
+                    "*b********"
+               ]
+          },
+          "powerups": [
+               {
+                    "x": 2,
+                    "y": 3,
+                    "type": "G",
                     "timeout": 9
                }
           ]
@@ -1337,8 +1283,8 @@
                          "x": 4,
                          "y": 5
                     },
-                    "alive": false,
-                    "area": 2,
+                    "alive": true,
+                    "area": 16,
                     "color": "A",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -1346,10 +1292,10 @@
                },
                "1": {
                     "position": {
-                         "x": 5,
-                         "y": 6
+                         "x": 4,
+                         "y": 5
                     },
-                    "alive": true,
+                    "alive": false,
                     "area": 15,
                     "color": "B",
                     "tangtoc": 0,
@@ -1363,23 +1309,23 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "**......b*",
-                    "**...BBBb*",
-                    "**...BBBb*",
-                    "**...BBB**",
-                    "**.....A**",
-                    "**.....A**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "**..AAAA**",
+                    "**..AAAA**",
+                    "bbB.AAAA**",
+                    "bbBBBBAA**",
+                    "bbB.....**",
+                    "*b......**",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": [
                {
-                    "x": 5,
-                    "y": 2,
-                    "type": "F",
+                    "x": 2,
+                    "y": 3,
+                    "type": "G",
                     "timeout": 8
                }
           ]
@@ -1388,11 +1334,11 @@
           "players": {
                "0": {
                     "position": {
-                         "x": 4,
+                         "x": 5,
                          "y": 5
                     },
-                    "alive": false,
-                    "area": 2,
+                    "alive": true,
+                    "area": 17,
                     "color": "A",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -1400,11 +1346,11 @@
                },
                "1": {
                     "position": {
-                         "x": 6,
-                         "y": 6
+                         "x": 4,
+                         "y": 5
                     },
-                    "alive": true,
-                    "area": 16,
+                    "alive": false,
+                    "area": 14,
                     "color": "B",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -1417,23 +1363,23 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "**......b*",
-                    "**...BBBb*",
-                    "**...BBBb*",
-                    "**...BBB**",
-                    "**....BA**",
-                    "**.....A**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "**..AAAA**",
+                    "**..AAAA**",
+                    "bbB.AAAA**",
+                    "bbBBBAAA**",
+                    "bbB.....**",
+                    "*b......**",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": [
                {
-                    "x": 5,
-                    "y": 2,
-                    "type": "F",
+                    "x": 2,
+                    "y": 3,
+                    "type": "G",
                     "timeout": 7
                }
           ]
@@ -1445,8 +1391,8 @@
                          "x": 4,
                          "y": 5
                     },
-                    "alive": false,
-                    "area": 1,
+                    "alive": true,
+                    "area": 17,
                     "color": "A",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -1454,11 +1400,11 @@
                },
                "1": {
                     "position": {
-                         "x": 6,
-                         "y": 7
+                         "x": 4,
+                         "y": 5
                     },
-                    "alive": true,
-                    "area": 17,
+                    "alive": false,
+                    "area": 14,
                     "color": "B",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -1471,23 +1417,23 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "**......b*",
-                    "**...BBBb*",
-                    "**...BBBb*",
-                    "**...BBB**",
-                    "**....BB**",
-                    "**.....A**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "**..AAAA**",
+                    "**..AAAA**",
+                    "bbB.AAAA**",
+                    "bbBBBAAA**",
+                    "bbB.....**",
+                    "*b......**",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": [
                {
-                    "x": 5,
-                    "y": 2,
-                    "type": "F",
+                    "x": 2,
+                    "y": 3,
+                    "type": "G",
                     "timeout": 6
                }
           ]
@@ -1496,11 +1442,11 @@
           "players": {
                "0": {
                     "position": {
-                         "x": 4,
+                         "x": 5,
                          "y": 5
                     },
-                    "alive": false,
-                    "area": 0,
+                    "alive": true,
+                    "area": 17,
                     "color": "A",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -1508,11 +1454,11 @@
                },
                "1": {
                     "position": {
-                         "x": 7,
-                         "y": 7
+                         "x": 4,
+                         "y": 5
                     },
-                    "alive": true,
-                    "area": 18,
+                    "alive": false,
+                    "area": 14,
                     "color": "B",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -1525,23 +1471,23 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "**......b*",
-                    "**...BBBb*",
-                    "**...BBBb*",
-                    "**...BBB**",
-                    "**....BB**",
-                    "**.....B**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "**..AAAA**",
+                    "**..AAAA**",
+                    "bbB.AAAA**",
+                    "bbBBBAAA**",
+                    "bbB.....**",
+                    "*b......**",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": [
                {
-                    "x": 5,
-                    "y": 2,
-                    "type": "F",
+                    "x": 2,
+                    "y": 3,
+                    "type": "G",
                     "timeout": 5
                }
           ]
@@ -1553,8 +1499,8 @@
                          "x": 4,
                          "y": 5
                     },
-                    "alive": false,
-                    "area": 0,
+                    "alive": true,
+                    "area": 17,
                     "color": "A",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -1562,11 +1508,11 @@
                },
                "1": {
                     "position": {
-                         "x": 7,
-                         "y": 6
+                         "x": 4,
+                         "y": 5
                     },
-                    "alive": true,
-                    "area": 19,
+                    "alive": false,
+                    "area": 14,
                     "color": "B",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -1579,23 +1525,23 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "**......b*",
-                    "**...BBBb*",
-                    "**...BBBb*",
-                    "**...BBB**",
-                    "**....BB**",
-                    "**....BB**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "**..AAAA**",
+                    "**..AAAA**",
+                    "bbB.AAAA**",
+                    "bbBBBAAA**",
+                    "bbB.....**",
+                    "*b......**",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": [
                {
-                    "x": 5,
-                    "y": 2,
-                    "type": "F",
+                    "x": 2,
+                    "y": 3,
+                    "type": "G",
                     "timeout": 4
                }
           ]
@@ -1604,11 +1550,11 @@
           "players": {
                "0": {
                     "position": {
-                         "x": 4,
+                         "x": 5,
                          "y": 5
                     },
-                    "alive": false,
-                    "area": 0,
+                    "alive": true,
+                    "area": 17,
                     "color": "A",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -1616,11 +1562,11 @@
                },
                "1": {
                     "position": {
-                         "x": 7,
+                         "x": 4,
                          "y": 5
                     },
-                    "alive": true,
-                    "area": 20,
+                    "alive": false,
+                    "area": 14,
                     "color": "B",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -1633,23 +1579,23 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "**......b*",
-                    "**...BBBb*",
-                    "**...BBBb*",
-                    "**...BBB**",
-                    "**....BB**",
-                    "**...BBB**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "**..AAAA**",
+                    "**..AAAA**",
+                    "bbB.AAAA**",
+                    "bbBBBAAA**",
+                    "bbB.....**",
+                    "*b......**",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": [
                {
-                    "x": 5,
-                    "y": 2,
-                    "type": "F",
+                    "x": 2,
+                    "y": 3,
+                    "type": "G",
                     "timeout": 3
                }
           ]
@@ -1661,8 +1607,8 @@
                          "x": 4,
                          "y": 5
                     },
-                    "alive": false,
-                    "area": 0,
+                    "alive": true,
+                    "area": 17,
                     "color": "A",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -1670,11 +1616,11 @@
                },
                "1": {
                     "position": {
-                         "x": 6,
+                         "x": 4,
                          "y": 5
                     },
-                    "alive": true,
-                    "area": 21,
+                    "alive": false,
+                    "area": 14,
                     "color": "B",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -1687,23 +1633,23 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "**......b*",
-                    "**...BBBb*",
-                    "**...BBBb*",
-                    "**...BBB**",
-                    "**...BBB**",
-                    "**...BBB**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "**..AAAA**",
+                    "**..AAAA**",
+                    "bbB.AAAA**",
+                    "bbBBBAAA**",
+                    "bbB.....**",
+                    "*b......**",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": [
                {
-                    "x": 5,
-                    "y": 2,
-                    "type": "F",
+                    "x": 2,
+                    "y": 3,
+                    "type": "G",
                     "timeout": 2
                }
           ]
@@ -1712,11 +1658,11 @@
           "players": {
                "0": {
                     "position": {
-                         "x": 4,
+                         "x": 5,
                          "y": 5
                     },
-                    "alive": false,
-                    "area": 0,
+                    "alive": true,
+                    "area": 17,
                     "color": "A",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -1724,11 +1670,11 @@
                },
                "1": {
                     "position": {
-                         "x": 6,
-                         "y": 4
+                         "x": 4,
+                         "y": 5
                     },
-                    "alive": true,
-                    "area": 22,
+                    "alive": false,
+                    "area": 14,
                     "color": "B",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -1741,23 +1687,23 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "**......b*",
-                    "**...BBBb*",
-                    "**...BBBb*",
-                    "**...BBB**",
-                    "**..BBBB**",
-                    "**...BBB**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "**..AAAA**",
+                    "**..AAAA**",
+                    "bbB.AAAA**",
+                    "bbBBBAAA**",
+                    "bbB.....**",
+                    "*b......**",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": [
                {
-                    "x": 5,
-                    "y": 2,
-                    "type": "F",
+                    "x": 2,
+                    "y": 3,
+                    "type": "G",
                     "timeout": 1
                }
           ]
@@ -1769,8 +1715,8 @@
                          "x": 4,
                          "y": 5
                     },
-                    "alive": false,
-                    "area": 0,
+                    "alive": true,
+                    "area": 17,
                     "color": "A",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -1778,11 +1724,11 @@
                },
                "1": {
                     "position": {
-                         "x": 5,
-                         "y": 4
+                         "x": 4,
+                         "y": 5
                     },
-                    "alive": true,
-                    "area": 23,
+                    "alive": false,
+                    "area": 14,
                     "color": "B",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -1795,22 +1741,22 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "********b*",
-                    "***..BBbb*",
-                    "***..BBbb*",
-                    "***.BBBb**",
-                    "***.BBBb**",
-                    "*****bbb**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "****aaaa**",
+                    "***.AAAa**",
+                    "bbb.AAAa**",
+                    "bbbBBAAa**",
+                    "bbb....***",
+                    "*b********",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": [
                {
                     "x": 3,
-                    "y": 4,
+                    "y": 6,
                     "type": "F",
                     "timeout": 10
                },
@@ -1826,11 +1772,11 @@
           "players": {
                "0": {
                     "position": {
-                         "x": 4,
+                         "x": 5,
                          "y": 5
                     },
-                    "alive": false,
-                    "area": 0,
+                    "alive": true,
+                    "area": 17,
                     "color": "A",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -1839,10 +1785,10 @@
                "1": {
                     "position": {
                          "x": 4,
-                         "y": 4
+                         "y": 5
                     },
-                    "alive": true,
-                    "area": 24,
+                    "alive": false,
+                    "area": 14,
                     "color": "B",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -1855,22 +1801,22 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "********b*",
-                    "***..BBbb*",
-                    "***.BBBbb*",
-                    "***.BBBb**",
-                    "***.BBBb**",
-                    "*****bbb**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "****aaaa**",
+                    "***.AAAa**",
+                    "bbb.AAAa**",
+                    "bbbBBAAa**",
+                    "bbb....***",
+                    "*b********",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": [
                {
                     "x": 3,
-                    "y": 4,
+                    "y": 6,
                     "type": "F",
                     "timeout": 9
                },
@@ -1886,27 +1832,27 @@
           "players": {
                "0": {
                     "position": {
+                         "x": 5,
+                         "y": 6
+                    },
+                    "alive": true,
+                    "area": 17,
+                    "color": "A",
+                    "tangtoc": 5,
+                    "dautron": 0,
+                    "powerup": "tangtoc"
+               },
+               "1": {
+                    "position": {
                          "x": 4,
                          "y": 5
                     },
                     "alive": false,
-                    "area": 0,
-                    "color": "A",
+                    "area": 14,
+                    "color": "B",
                     "tangtoc": 0,
                     "dautron": 0,
                     "powerup": null
-               },
-               "1": {
-                    "position": {
-                         "x": 3,
-                         "y": 4
-                    },
-                    "alive": true,
-                    "area": 25,
-                    "color": "B",
-                    "tangtoc": 0,
-                    "dautron": 5,
-                    "powerup": "dautron"
                }
           },
           "frequency": 10,
@@ -1915,23 +1861,23 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "********b*",
-                    "***.BBBbb*",
-                    "***.BBBbb*",
-                    "***.BBBb**",
-                    "***.BBBb**",
-                    "*****bbb**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "****aaaa**",
+                    "***.AAAa**",
+                    "bbb.AAAa**",
+                    "bbbBBAAa**",
+                    "bbb....***",
+                    "*b********",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": [
                {
-                    "x": 5,
+                    "x": 3,
                     "y": 6,
-                    "type": "G",
+                    "type": "F",
                     "timeout": 8
                }
           ]
@@ -1940,27 +1886,27 @@
           "players": {
                "0": {
                     "position": {
+                         "x": 5,
+                         "y": 4
+                    },
+                    "alive": true,
+                    "area": 18,
+                    "color": "A",
+                    "tangtoc": 4,
+                    "dautron": 0,
+                    "powerup": "tangtoc"
+               },
+               "1": {
+                    "position": {
                          "x": 4,
                          "y": 5
                     },
                     "alive": false,
-                    "area": 0,
-                    "color": "A",
+                    "area": 13,
+                    "color": "B",
                     "tangtoc": 0,
                     "dautron": 0,
                     "powerup": null
-               },
-               "1": {
-                    "position": {
-                         "x": 3,
-                         "y": 3
-                    },
-                    "alive": true,
-                    "area": 26,
-                    "color": "B",
-                    "tangtoc": 0,
-                    "dautron": 4,
-                    "powerup": "dautron"
                }
           },
           "frequency": 10,
@@ -1969,23 +1915,23 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "********b*",
-                    "***BBBBbb*",
-                    "***.BBBbb*",
-                    "***.BBBb**",
-                    "***.BBBb**",
-                    "*****bbb**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "****aaaa**",
+                    "***.AAAa**",
+                    "bbb.AAAa**",
+                    "bbbBAAAa**",
+                    "bbb....***",
+                    "*b********",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": [
                {
-                    "x": 5,
+                    "x": 3,
                     "y": 6,
-                    "type": "G",
+                    "type": "F",
                     "timeout": 7
                }
           ]
@@ -1994,27 +1940,27 @@
           "players": {
                "0": {
                     "position": {
-                         "x": 4,
-                         "y": 5
+                         "x": 5,
+                         "y": 6
                     },
-                    "alive": false,
-                    "area": 0,
+                    "alive": true,
+                    "area": 18,
                     "color": "A",
-                    "tangtoc": 0,
+                    "tangtoc": 3,
                     "dautron": 0,
-                    "powerup": null
+                    "powerup": "tangtoc"
                },
                "1": {
                     "position": {
                          "x": 4,
-                         "y": 3
+                         "y": 5
                     },
-                    "alive": true,
-                    "area": 27,
+                    "alive": false,
+                    "area": 13,
                     "color": "B",
                     "tangtoc": 0,
-                    "dautron": 3,
-                    "powerup": "dautron"
+                    "dautron": 0,
+                    "powerup": null
                }
           },
           "frequency": 10,
@@ -2023,23 +1969,23 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "********b*",
-                    "***BBBBbb*",
-                    "***BBBBbb*",
-                    "***.BBBb**",
-                    "***.BBBb**",
-                    "*****bbb**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "****aaaa**",
+                    "***.AAAa**",
+                    "bbb.AAAa**",
+                    "bbbBAAAa**",
+                    "bbb....***",
+                    "*b********",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": [
                {
-                    "x": 5,
+                    "x": 3,
                     "y": 6,
-                    "type": "G",
+                    "type": "F",
                     "timeout": 6
                }
           ]
@@ -2048,27 +1994,27 @@
           "players": {
                "0": {
                     "position": {
+                         "x": 5,
+                         "y": 4
+                    },
+                    "alive": true,
+                    "area": 18,
+                    "color": "A",
+                    "tangtoc": 2,
+                    "dautron": 0,
+                    "powerup": "tangtoc"
+               },
+               "1": {
+                    "position": {
                          "x": 4,
                          "y": 5
                     },
                     "alive": false,
-                    "area": 0,
-                    "color": "A",
+                    "area": 13,
+                    "color": "B",
                     "tangtoc": 0,
                     "dautron": 0,
                     "powerup": null
-               },
-               "1": {
-                    "position": {
-                         "x": 5,
-                         "y": 3
-                    },
-                    "alive": true,
-                    "area": 28,
-                    "color": "B",
-                    "tangtoc": 0,
-                    "dautron": 2,
-                    "powerup": "dautron"
                }
           },
           "frequency": 10,
@@ -2077,23 +2023,23 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "********b*",
-                    "***BBBBbb*",
-                    "***BBBBbb*",
-                    "***BBBBb**",
-                    "***.BBBb**",
-                    "*****bbb**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "****aaaa**",
+                    "***.AAAa**",
+                    "bbb.AAAa**",
+                    "bbbBAAAa**",
+                    "bbb....***",
+                    "*b********",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": [
                {
-                    "x": 5,
+                    "x": 3,
                     "y": 6,
-                    "type": "G",
+                    "type": "F",
                     "timeout": 5
                }
           ]
@@ -2102,27 +2048,27 @@
           "players": {
                "0": {
                     "position": {
+                         "x": 5,
+                         "y": 6
+                    },
+                    "alive": true,
+                    "area": 18,
+                    "color": "A",
+                    "tangtoc": 1,
+                    "dautron": 0,
+                    "powerup": "tangtoc"
+               },
+               "1": {
+                    "position": {
                          "x": 4,
                          "y": 5
                     },
                     "alive": false,
-                    "area": 0,
-                    "color": "A",
+                    "area": 13,
+                    "color": "B",
                     "tangtoc": 0,
                     "dautron": 0,
                     "powerup": null
-               },
-               "1": {
-                    "position": {
-                         "x": 6,
-                         "y": 3
-                    },
-                    "alive": true,
-                    "area": 29,
-                    "color": "B",
-                    "tangtoc": 0,
-                    "dautron": 1,
-                    "powerup": "dautron"
                }
           },
           "frequency": 10,
@@ -2131,23 +2077,23 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "********b*",
-                    "***BBBBbb*",
-                    "***BBBBbb*",
-                    "***BBBBb**",
-                    "***BBBBb**",
-                    "*****bbb**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "****aaaa**",
+                    "***.AAAa**",
+                    "bbb.AAAa**",
+                    "bbbBAAAa**",
+                    "bbb....***",
+                    "*b********",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": [
                {
-                    "x": 5,
+                    "x": 3,
                     "y": 6,
-                    "type": "G",
+                    "type": "F",
                     "timeout": 4
                }
           ]
@@ -2156,11 +2102,11 @@
           "players": {
                "0": {
                     "position": {
-                         "x": 4,
+                         "x": 5,
                          "y": 5
                     },
-                    "alive": false,
-                    "area": 0,
+                    "alive": true,
+                    "area": 18,
                     "color": "A",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -2168,11 +2114,11 @@
                },
                "1": {
                     "position": {
-                         "x": 5,
-                         "y": 3
+                         "x": 4,
+                         "y": 5
                     },
-                    "alive": true,
-                    "area": 29,
+                    "alive": false,
+                    "area": 13,
                     "color": "B",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -2185,23 +2131,23 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "********b*",
-                    "***BBBBbb*",
-                    "***BBBBbb*",
-                    "***BBBBb**",
-                    "***BBBBb**",
-                    "*****bbb**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "****aaaa**",
+                    "***.AAAa**",
+                    "bbb.AAAa**",
+                    "bbbBAAAa**",
+                    "bbb....***",
+                    "*b********",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": [
                {
-                    "x": 5,
+                    "x": 3,
                     "y": 6,
-                    "type": "G",
+                    "type": "F",
                     "timeout": 3
                }
           ]
@@ -2213,8 +2159,8 @@
                          "x": 4,
                          "y": 5
                     },
-                    "alive": false,
-                    "area": 0,
+                    "alive": true,
+                    "area": 18,
                     "color": "A",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -2222,11 +2168,11 @@
                },
                "1": {
                     "position": {
-                         "x": 5,
-                         "y": 4
+                         "x": 4,
+                         "y": 5
                     },
-                    "alive": true,
-                    "area": 29,
+                    "alive": false,
+                    "area": 13,
                     "color": "B",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -2239,23 +2185,23 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "********b*",
-                    "***BBBBbb*",
-                    "***BBBBbb*",
-                    "***BBBBb**",
-                    "***BBBBb**",
-                    "*****bbb**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "****aaaa**",
+                    "***.AAAa**",
+                    "bbb.AAAa**",
+                    "bbbBAAAa**",
+                    "bbb....***",
+                    "*b********",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": [
                {
-                    "x": 5,
+                    "x": 3,
                     "y": 6,
-                    "type": "G",
+                    "type": "F",
                     "timeout": 2
                }
           ]
@@ -2264,11 +2210,11 @@
           "players": {
                "0": {
                     "position": {
-                         "x": 4,
+                         "x": 5,
                          "y": 5
                     },
-                    "alive": false,
-                    "area": 0,
+                    "alive": true,
+                    "area": 18,
                     "color": "A",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -2276,11 +2222,11 @@
                },
                "1": {
                     "position": {
-                         "x": 5,
+                         "x": 4,
                          "y": 5
                     },
-                    "alive": true,
-                    "area": 29,
+                    "alive": false,
+                    "area": 13,
                     "color": "B",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -2293,23 +2239,23 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "********b*",
-                    "***BBBBbb*",
-                    "***BBBBbb*",
-                    "***BBBBb**",
-                    "***BBBBb**",
-                    "*****bbb**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "****aaaa**",
+                    "***.AAAa**",
+                    "bbb.AAAa**",
+                    "bbbBAAAa**",
+                    "bbb....***",
+                    "*b********",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": [
                {
-                    "x": 5,
+                    "x": 3,
                     "y": 6,
-                    "type": "G",
+                    "type": "F",
                     "timeout": 1
                }
           ]
@@ -2321,8 +2267,8 @@
                          "x": 4,
                          "y": 5
                     },
-                    "alive": false,
-                    "area": 0,
+                    "alive": true,
+                    "area": 18,
                     "color": "A",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -2330,11 +2276,11 @@
                },
                "1": {
                     "position": {
-                         "x": 5,
+                         "x": 4,
                          "y": 5
                     },
-                    "alive": true,
-                    "area": 29,
+                    "alive": false,
+                    "area": 13,
                     "color": "B",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -2347,29 +2293,29 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "********b*",
-                    "***bbbbbb*",
-                    "***bBBbbb*",
-                    "***bBBbb**",
-                    "***bbbbb**",
-                    "*****bbb**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "****aaaa**",
+                    "****aaaa**",
+                    "bbb*AAaa**",
+                    "bbbbAAaa**",
+                    "bbb*******",
+                    "*b********",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": [
                {
-                    "x": 5,
+                    "x": 4,
                     "y": 5,
-                    "type": "G",
+                    "type": "F",
                     "timeout": 10
                },
                {
                     "x": 5,
-                    "y": 4,
-                    "type": "F",
+                    "y": 5,
+                    "type": "E",
                     "timeout": 10
                }
           ]
@@ -2378,11 +2324,11 @@
           "players": {
                "0": {
                     "position": {
-                         "x": 4,
+                         "x": 5,
                          "y": 5
                     },
-                    "alive": false,
-                    "area": 0,
+                    "alive": true,
+                    "area": 18,
                     "color": "A",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -2390,15 +2336,15 @@
                },
                "1": {
                     "position": {
-                         "x": 5,
+                         "x": 4,
                          "y": 5
                     },
-                    "alive": true,
-                    "area": 29,
+                    "alive": false,
+                    "area": 13,
                     "color": "B",
-                    "tangtoc": 5,
+                    "tangtoc": 0,
                     "dautron": 0,
-                    "powerup": "tangtoc"
+                    "powerup": null
                }
           },
           "frequency": 10,
@@ -2407,22 +2353,22 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "********b*",
-                    "***bbbbbb*",
-                    "***bBBbbb*",
-                    "***bBBbb**",
-                    "***bbbbb**",
-                    "*****bbb**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "****aaaa**",
+                    "****aaaa**",
+                    "bbb*AAaa**",
+                    "bbbbAAaa**",
+                    "bbb*******",
+                    "*b********",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": [
                {
-                    "x": 5,
-                    "y": 4,
+                    "x": 4,
+                    "y": 5,
                     "type": "F",
                     "timeout": 9
                }
@@ -2435,78 +2381,24 @@
                          "x": 4,
                          "y": 5
                     },
-                    "alive": false,
-                    "area": 0,
+                    "alive": true,
+                    "area": 18,
                     "color": "A",
                     "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
+                    "dautron": 5,
+                    "powerup": "dautron"
                },
                "1": {
-                    "position": {
-                         "x": 5,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 29,
-                    "color": "B",
-                    "tangtoc": 4,
-                    "dautron": 0,
-                    "powerup": "tangtoc"
-               }
-          },
-          "frequency": 10,
-          "stopGame": false,
-          "map": {
-               "rows": 10,
-               "columns": 10,
-               "grid": [
-                    "*********b",
-                    "********bb",
-                    "********b*",
-                    "***bbbbbb*",
-                    "***bBBbbb*",
-                    "***bBBbb**",
-                    "***bbbbb**",
-                    "*****bbb**",
-                    "**********",
-                    "**********"
-               ]
-          },
-          "powerups": [
-               {
-                    "x": 5,
-                    "y": 4,
-                    "type": "F",
-                    "timeout": 8
-               }
-          ]
-     },
-     "44": {
-          "players": {
-               "0": {
                     "position": {
                          "x": 4,
                          "y": 5
                     },
                     "alive": false,
-                    "area": 0,
-                    "color": "A",
+                    "area": 13,
+                    "color": "B",
                     "tangtoc": 0,
                     "dautron": 0,
                     "powerup": null
-               },
-               "1": {
-                    "position": {
-                         "x": 5,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 29,
-                    "color": "B",
-                    "tangtoc": 3,
-                    "dautron": 0,
-                    "powerup": "tangtoc"
                }
           },
           "frequency": 10,
@@ -2515,26 +2407,66 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "********b*",
-                    "***bbbbbb*",
-                    "***bBBbbb*",
-                    "***bBBbb**",
-                    "***bbbbb**",
-                    "*****bbb**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "****aaaa**",
+                    "****aaaa**",
+                    "bbb*AAaa**",
+                    "bbbbAAaa**",
+                    "bbb*******",
+                    "*b********",
+                    "*b********",
+                    "*b********"
                ]
           },
-          "powerups": [
-               {
-                    "x": 5,
-                    "y": 4,
-                    "type": "F",
-                    "timeout": 7
+          "powerups": []
+     },
+     "44": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 5,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 18,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 4,
+                    "powerup": "dautron"
+               },
+               "1": {
+                    "position": {
+                         "x": 4,
+                         "y": 5
+                    },
+                    "alive": false,
+                    "area": 13,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
                }
-          ]
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    "*******a**",
+                    "*******a**",
+                    "****aaaa**",
+                    "****aaaa**",
+                    "bbb*AAaa**",
+                    "bbbbAAaa**",
+                    "bbb*******",
+                    "*b********",
+                    "*b********",
+                    "*b********"
+               ]
+          },
+          "powerups": []
      },
      "45": {
           "players": {
@@ -2543,78 +2475,24 @@
                          "x": 4,
                          "y": 5
                     },
-                    "alive": false,
-                    "area": 0,
+                    "alive": true,
+                    "area": 18,
                     "color": "A",
                     "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
+                    "dautron": 3,
+                    "powerup": "dautron"
                },
                "1": {
-                    "position": {
-                         "x": 5,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 29,
-                    "color": "B",
-                    "tangtoc": 2,
-                    "dautron": 0,
-                    "powerup": "tangtoc"
-               }
-          },
-          "frequency": 10,
-          "stopGame": false,
-          "map": {
-               "rows": 10,
-               "columns": 10,
-               "grid": [
-                    "*********b",
-                    "********bb",
-                    "********b*",
-                    "***bbbbbb*",
-                    "***bBBbbb*",
-                    "***bBBbb**",
-                    "***bbbbb**",
-                    "*****bbb**",
-                    "**********",
-                    "**********"
-               ]
-          },
-          "powerups": [
-               {
-                    "x": 5,
-                    "y": 4,
-                    "type": "F",
-                    "timeout": 6
-               }
-          ]
-     },
-     "46": {
-          "players": {
-               "0": {
                     "position": {
                          "x": 4,
                          "y": 5
                     },
                     "alive": false,
-                    "area": 0,
-                    "color": "A",
+                    "area": 13,
+                    "color": "B",
                     "tangtoc": 0,
                     "dautron": 0,
                     "powerup": null
-               },
-               "1": {
-                    "position": {
-                         "x": 5,
-                         "y": 5
-                    },
-                    "alive": true,
-                    "area": 29,
-                    "color": "B",
-                    "tangtoc": 1,
-                    "dautron": 0,
-                    "powerup": "tangtoc"
                }
           },
           "frequency": 10,
@@ -2623,26 +2501,66 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "********b*",
-                    "***bbbbbb*",
-                    "***bBBbbb*",
-                    "***bBBbb**",
-                    "***bbbbb**",
-                    "*****bbb**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "****aaaa**",
+                    "****aaaa**",
+                    "bbb*AAaa**",
+                    "bbbbAAaa**",
+                    "bbb*******",
+                    "*b********",
+                    "*b********",
+                    "*b********"
                ]
           },
-          "powerups": [
-               {
-                    "x": 5,
-                    "y": 4,
-                    "type": "F",
-                    "timeout": 5
+          "powerups": []
+     },
+     "46": {
+          "players": {
+               "0": {
+                    "position": {
+                         "x": 5,
+                         "y": 5
+                    },
+                    "alive": true,
+                    "area": 18,
+                    "color": "A",
+                    "tangtoc": 0,
+                    "dautron": 2,
+                    "powerup": "dautron"
+               },
+               "1": {
+                    "position": {
+                         "x": 4,
+                         "y": 5
+                    },
+                    "alive": false,
+                    "area": 13,
+                    "color": "B",
+                    "tangtoc": 0,
+                    "dautron": 0,
+                    "powerup": null
                }
-          ]
+          },
+          "frequency": 10,
+          "stopGame": false,
+          "map": {
+               "rows": 10,
+               "columns": 10,
+               "grid": [
+                    "*******a**",
+                    "*******a**",
+                    "****aaaa**",
+                    "****aaaa**",
+                    "bbb*AAaa**",
+                    "bbbbAAaa**",
+                    "bbb*******",
+                    "*b********",
+                    "*b********",
+                    "*b********"
+               ]
+          },
+          "powerups": []
      },
      "47": {
           "players": {
@@ -2651,24 +2569,24 @@
                          "x": 4,
                          "y": 5
                     },
-                    "alive": false,
-                    "area": 0,
+                    "alive": true,
+                    "area": 18,
                     "color": "A",
                     "tangtoc": 0,
-                    "dautron": 0,
-                    "powerup": null
+                    "dautron": 1,
+                    "powerup": "dautron"
                },
                "1": {
                     "position": {
-                         "x": 5,
-                         "y": 4
+                         "x": 4,
+                         "y": 5
                     },
-                    "alive": true,
-                    "area": 29,
+                    "alive": false,
+                    "area": 13,
                     "color": "B",
                     "tangtoc": 0,
-                    "dautron": 5,
-                    "powerup": "dautron"
+                    "dautron": 0,
+                    "powerup": null
                }
           },
           "frequency": 10,
@@ -2677,16 +2595,16 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "********b*",
-                    "***bbbbbb*",
-                    "***bBBbbb*",
-                    "***bBBbb**",
-                    "***bbbbb**",
-                    "*****bbb**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "****aaaa**",
+                    "****aaaa**",
+                    "bbb*AAaa**",
+                    "bbbbAAaa**",
+                    "bbb*******",
+                    "*b********",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": []
@@ -2695,11 +2613,11 @@
           "players": {
                "0": {
                     "position": {
-                         "x": 4,
+                         "x": 5,
                          "y": 5
                     },
-                    "alive": false,
-                    "area": 0,
+                    "alive": true,
+                    "area": 18,
                     "color": "A",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -2707,15 +2625,15 @@
                },
                "1": {
                     "position": {
-                         "x": 5,
+                         "x": 4,
                          "y": 5
                     },
-                    "alive": true,
-                    "area": 29,
+                    "alive": false,
+                    "area": 13,
                     "color": "B",
                     "tangtoc": 0,
-                    "dautron": 4,
-                    "powerup": "dautron"
+                    "dautron": 0,
+                    "powerup": null
                }
           },
           "frequency": 10,
@@ -2724,16 +2642,16 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "********b*",
-                    "***bbbbbb*",
-                    "***bBBbbb*",
-                    "***bBBbb**",
-                    "***bbbbb**",
-                    "*****bbb**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "****aaaa**",
+                    "****aaaa**",
+                    "bbb*AAaa**",
+                    "bbbbAAaa**",
+                    "bbb*******",
+                    "*b********",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": []
@@ -2745,8 +2663,8 @@
                          "x": 4,
                          "y": 5
                     },
-                    "alive": false,
-                    "area": 0,
+                    "alive": true,
+                    "area": 18,
                     "color": "A",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -2754,15 +2672,15 @@
                },
                "1": {
                     "position": {
-                         "x": 5,
+                         "x": 4,
                          "y": 5
                     },
-                    "alive": true,
-                    "area": 29,
+                    "alive": false,
+                    "area": 13,
                     "color": "B",
                     "tangtoc": 0,
-                    "dautron": 3,
-                    "powerup": "dautron"
+                    "dautron": 0,
+                    "powerup": null
                }
           },
           "frequency": 10,
@@ -2771,16 +2689,16 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "********b*",
-                    "***bbbbbb*",
-                    "***bBBbbb*",
-                    "***bBBbb**",
-                    "***bbbbb**",
-                    "*****bbb**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "****aaaa**",
+                    "****aaaa**",
+                    "bbb*AAaa**",
+                    "bbbbAAaa**",
+                    "bbb*******",
+                    "*b********",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": []
@@ -2789,11 +2707,11 @@
           "players": {
                "0": {
                     "position": {
-                         "x": 4,
+                         "x": 5,
                          "y": 5
                     },
-                    "alive": false,
-                    "area": 0,
+                    "alive": true,
+                    "area": 18,
                     "color": "A",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -2801,15 +2719,15 @@
                },
                "1": {
                     "position": {
-                         "x": 5,
+                         "x": 4,
                          "y": 5
                     },
-                    "alive": true,
-                    "area": 29,
+                    "alive": false,
+                    "area": 13,
                     "color": "B",
                     "tangtoc": 0,
-                    "dautron": 2,
-                    "powerup": "dautron"
+                    "dautron": 0,
+                    "powerup": null
                }
           },
           "frequency": 10,
@@ -2818,16 +2736,16 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "********b*",
-                    "***bbbbbb*",
-                    "***bBBbbb*",
-                    "***bBBbb**",
-                    "***bbbbb**",
-                    "*****bbb**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "****aaaa**",
+                    "****aaaa**",
+                    "bbb*AAaa**",
+                    "bbbbAAaa**",
+                    "bbb*******",
+                    "*b********",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": []
@@ -2836,11 +2754,11 @@
           "players": {
                "0": {
                     "position": {
-                         "x": 4,
+                         "x": 5,
                          "y": 5
                     },
                     "alive": false,
-                    "area": 0,
+                    "area": 18,
                     "color": "A",
                     "tangtoc": 0,
                     "dautron": 0,
@@ -2848,15 +2766,15 @@
                },
                "1": {
                     "position": {
-                         "x": 5,
+                         "x": 4,
                          "y": 5
                     },
                     "alive": false,
-                    "area": 29,
+                    "area": 13,
                     "color": "B",
                     "tangtoc": 0,
-                    "dautron": 1,
-                    "powerup": "dautron"
+                    "dautron": 0,
+                    "powerup": null
                }
           },
           "frequency": 10,
@@ -2865,16 +2783,16 @@
                "rows": 10,
                "columns": 10,
                "grid": [
-                    "*********b",
-                    "********bb",
-                    "********b*",
-                    "***bbbbbb*",
-                    "***bbbbbb*",
-                    "***bbbbb**",
-                    "***bbbbb**",
-                    "*****bbb**",
-                    "**********",
-                    "**********"
+                    "*******a**",
+                    "*******a**",
+                    "****aaaa**",
+                    "****aaaa**",
+                    "bbb*aaaa**",
+                    "bbbbaaaa**",
+                    "bbb*******",
+                    "*b********",
+                    "*b********",
+                    "*b********"
                ]
           },
           "powerups": []

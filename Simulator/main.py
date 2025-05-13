@@ -8,6 +8,7 @@ from subprocess import STDOUT, check_output
 from copy import deepcopy 
 import psutil
 import shutil
+import argparse
 
 from player import *
 from board import *
@@ -36,21 +37,20 @@ def readGameBeforeStarting(path : str):
     print("Reading configuration of the game before start is completed")
     return board, frequency
 
-def readNames():
-    map_file_path = input("Please type the path of the map file: ")
-    number_of_players = int(input("Please type the number of team: "))
-    names_of_teams = ["PATH_FILE" for i in range(number_of_players)]
-    for i in range(number_of_players):
-        names_of_teams[i] = input("Please enter name of team " + str(i) + ": ")
-    return map_file_path, names_of_teams
+def parseArguments():
+    parser = argparse.ArgumentParser(description="CC25 simulator v3")
+    parser.add_argument("map", help="Path to the map file, must be in Map directory")
+    parser.add_argument("--players", "-p", nargs='+', help="A list of players name, must be in Players directory")
+    parserArgs = parser.parse_args()
+    return parserArgs.map, parserArgs.players
 
 def main():
-    map_file_path, names_of_teams = readNames()
+    map_file_path, names_of_teams = parseArguments()
     logger = JSONlogger()
     board, frequency = readGameBeforeStarting(map_file_path)
     listOfPlayers = ListOfPlayers(len(names_of_teams)) 
     fileInterator = FileInteractor()
-    listOfPowerUps = [PowerUp(4, 9, 'E', frequency), PowerUp(5, 9, 'E', frequency)]
+    listOfPowerUps = []
     stopGame = False
     turn = radius = 0
     lastPositions = [(-1, -1) for i in range(len(names_of_teams))]
@@ -180,6 +180,7 @@ def main():
             cells[x][y].append(i)
 
         cellsAffectedByE = {}
+        cellsAffectedByTangToc = {}
         for x in range(board.getNumberOfRows()):
             for y in range(board.getNumberOfColumns()):
                 if board.checkUnmovable(x, y):
@@ -189,10 +190,25 @@ def main():
                 if numberOfPlayersOnCell >= 2:
                     continue
                 if numberOfPlayersOnCell == 1:
-                    if cell == 'A' or cell == 'B' or cell == 'C'or cell == 'D':
+                    if cell == '.' and listOfPlayers[cells[x][y][0]].getPowerUp() != 'tangtoc':
+                        id = cells[x][y][0]
+                        cell_char_to_set = listOfPlayers[id].getColor() 
+                        listOfPlayers[id].increaseArea()
+                        board.setCell(x, y, cell_char_to_set)
+                    if cell == 'A' or cell == 'B' or cell == 'C'or cell == 'D' and listOfPlayers[cells[x][y][0]].getPowerUp() != 'tangtoc':
                         id = ord(cell) - ord('A')
                         listOfPlayers[id].increaseArea(-1)
+                        id = cells[x][y][0]
+                        cell_char_to_set = listOfPlayers[id].getColor() 
+                        listOfPlayers[id].increaseArea()
+                        board.setCell(x, y, cell_char_to_set)
                     
+                    if listOfPlayers[cells[x][y][0]].getPowerUp() == 'tangtoc':
+                        id = cells[x][y][0]
+                        if (x,y) not in cellsAffectedByTangToc:
+                            cellsAffectedByTangToc[(x,y)] = []
+                        cellsAffectedByTangToc[(x,y)].append(id)
+
                     if findPowerUp(x, y, listOfPowerUps) == 'G' and listOfPlayers[cells[x][y][0]].checkActivePowerUp() == False:
                         id = cells[x][y][0]
                         listOfPlayers[id].setTangToc()
@@ -227,16 +243,14 @@ def main():
                         deletePowerUp(x, y, listOfPowerUps)
 
                     if findPowerUp(x, y, listOfPowerUps) == 'F' and listOfPlayers[cells[x][y][0]].checkActivePowerUp() == False:
-                        player_id_on_F = cells[x][y][0]
-                        listOfPlayers[player_id_on_F].setDauTron()
+                        id = cells[x][y][0]
+                        listOfPlayers[id].setDauTron()
                         deletePowerUp(x, y, listOfPowerUps)
+
+                        cell_char_to_set = listOfPlayers[id].getColor() 
+                        listOfPlayers[id].increaseArea()
+                        board.setCell(x, y, cell_char_to_set)
                     
-                    id = cells[x][y][0]
-                    # The variable 'cell' here is re-assigned to the player's color character.
-                    # This is done to set the board cell to the player's color.
-                    cell_char_to_set = listOfPlayers[id].getColor() 
-                    listOfPlayers[id].increaseArea()
-                    board.setCell(x, y, cell_char_to_set) # Set the cell to the player's color
             
         # Apply E cell effects
         for pos, player_ids in cellsAffectedByE.items():
@@ -260,11 +274,37 @@ def main():
                 listOfPlayers[id_player_on_E].increaseArea()
             # else: cell is affected by multiple players, leave it as is
 
+        # Track and resolve TangToc intermediate cells
+        for i in range(len(listOfPlayers)):
+            if not listOfPlayers[i].checkAlive():
+                continue
+                
+            midCell = listOfPlayers[i].getLastMidCell()
+            if midCell is not None:
+                if midCell not in cellsAffectedByTangToc:
+                    cellsAffectedByTangToc[midCell] = []
+                cellsAffectedByTangToc[midCell].append(i)
+                
+        # Apply TangToc mid-cell effects
+        for pos, player_ids in cellsAffectedByTangToc.items():
+            x, y = pos
+            # If cell is affected by exactly one player
+            if len(player_ids) == 1:
+                player_id = player_ids[0]
+                player_color = listOfPlayers[player_id].getColor()
+                
+                current_cell_type = board.getCell(x, y)
+                if 'A' <= current_cell_type <= 'D':  # If it's another player's territory
+                    owner_id = ord(current_cell_type) - ord('A')
+                    if owner_id != player_id:  # and not the current player's own territory
+                        listOfPlayers[owner_id].increaseArea(-1)
+                
+                board.setCell(x, y, player_color)
+                listOfPlayers[player_id].increaseArea()
+            # else: cell is affected by multiple players, leave it as is
+
         numberOfColors = len(listOfPlayers)
         updatedArea = board.updateCoveredArea(numberOfColors)
-
-        # Cell Coloring
-        # board.colorCell()
 
         # Update powerup timeout
         updatePowerUpTimeout(listOfPowerUps)
@@ -285,7 +325,7 @@ def main():
                     listOfPlayers[i].getKilled()
 
         if turn % frequency == 0:
-            addPowerUp(board, listOfPowerUps, frequency)
+            addPowerUp(board, listOfPowerUps, frequency, listOfPlayers)
 
         turn += 1
 

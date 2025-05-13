@@ -11,6 +11,7 @@ class Player:
         self.tangtoc = 0
         self.dautron = 0 # New attribute for F power-up
         self.powerup = None
+        self.lastMidCell = None
     
     def getColor(self) -> str:
         return self.color
@@ -71,6 +72,9 @@ class Player:
 
     def checkActivePowerUp(self) -> bool:
         return self.powerup != None
+    
+    def getPowerUp(self) -> str:
+        return self.powerup
 
     def setTangToc(self) -> None:
         self.tangtoc = 5
@@ -92,6 +96,8 @@ class Player:
         if self.powerup == "dautron": # Only nullify powerup if it was dautron
             self.powerup = None
 
+    def getLastMidCell(self) -> tuple:
+        return getattr(self, 'lastMidCell', None)
 
     def moveNext(self, intendedPosition, board = None) -> tuple:
         if not self.alive:
@@ -191,7 +197,12 @@ class Player:
                         if dautron_active_at_turn_start and self.dautron == 0: self.resetDauTron()
                         if tangtoc_active_at_turn_start and self.tangtoc == 0: self.resetTangToc()
                         return (prev_x, prev_y) 
-                    board.setCell(midX, midY, self.color) 
+                    self.lastMidCell = (midX, midY)
+                    # board.setCell(midX, midY, self.color) 
+                else:
+                    self.lastMidCell = None
+            else:
+                self.lastMidCell = None
 
             # --- Finalize Move ---
             self.x = nextX
