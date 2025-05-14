@@ -1,8 +1,9 @@
 # ew
 .vscode
-Simulator/Match
+Simulator/Match/
 #Simulator/Players will delete all file execept executable/pyscript, so gotta move the source elsewhere
 Simulator/Players/
+Simulator/__pycache__/
 *.exe
 
 # Byte-compiled / optimized / DLL files

@@ -1,1 +1,0 @@
-g++ .\source\*.cpp -o app.exe -I.\include
